@@ -36,6 +36,19 @@ header {
   transform: unset;
 }
 
+.nav-item {
+  opacity: 0.8;
+}
+
 .nav-item:hover {
   background-color: rgba(143, 143, 143, 0.2);
+  border-radius: 3px;
+  opacity: 1;
+}
+
+/* tree menu  */
+.tree-menu {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.1s;
 }
