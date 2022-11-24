@@ -6,7 +6,7 @@ const mobileNav = $.querySelector(".main-top-menu");
 const mobileMenuColseBtn = $.querySelector(".close-mobile-menu");
 const mainMenuItems = $.querySelectorAll(".have-tree-menu");
 const treeMenus = $.querySelectorAll(".tree-menu");
-
+const treeMenusParent = $.querySelectorAll(".tree-menu-parent");
 humbugger.onclick = () => {
   mobileNav.classList.add("active");
 };
@@ -38,8 +38,11 @@ for (let menuItems of mainMenuItems) {
   });
 }
 
-for (let treeItems of treeMenus) {
-  treeItems.addEventListener("mouseleave", () => {
-    treeItems.style.height = "0px";
+// closeing the tree Menu with Mouse Leave
+treeMenusParent.forEach((item) => {
+  item.addEventListener("mouseleave", () => {
+    for (let treeItems of treeMenus) {
+      treeItems.style.height = "0px";
+    }
   });
-}
+});

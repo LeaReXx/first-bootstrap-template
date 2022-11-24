@@ -59,10 +59,11 @@ header {
   .tree-menu {
     background-color: rgba(143, 143, 143, 0.2);
     position: absolute;
-    min-width: 120px;
+    min-width: 110px;
   }
 
   .tree-menu-parent:hover {
+    border-radius: 4px;
     background-color: rgba(143, 143, 143, 0.2);
   }
 }
