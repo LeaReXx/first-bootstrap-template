@@ -1,4 +1,5 @@
 header {
+
   background-image: linear-gradient(
     135deg,
     rgb(235, 231, 252) 0%,
@@ -7,6 +8,13 @@ header {
   );
   height: 60vh;
 }
+
+.under-header-tag {
+  width: 100%;
+  margin: auto;
+  max-width: 576px;
+}
+
 /* humbugger icon for mobile  */
 .humbugger,
 .close-mobile-menu,
@@ -55,20 +63,31 @@ header {
   overflow: hidden;
   transition: all 0.1s;
 }
+/* header  */
+.header-content {
+  margin-top: 6rem;
+}
 
+.header-left-content {
+  line-height: 1.7;
+}
 @media screen and (min-width: 768px) {
   .main-top-menu {
     all: unset;
   }
 
   .tree-menu {
-    background-color: rgba(143, 143, 143, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     min-width: 110px;
   }
 
   .tree-menu-parent:hover {
     border-radius: 4px;
-    background-color: rgba(143, 143, 143, 0.2);
+
   }
 }
+.under-header-tag {
+  max-width: 800px;
+}
+
