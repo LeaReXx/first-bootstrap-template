@@ -41,8 +41,6 @@ header {
 }
 
 .nav-item:hover {
-  background-color: rgba(143, 143, 143, 0.2);
-  border-radius: 3px;
   opacity: 1;
 }
 
@@ -51,4 +49,20 @@ header {
   height: 0px;
   overflow: hidden;
   transition: all 0.1s;
+}
+
+@media screen and (min-width:768px) {
+  .main-top-menu {
+    all: unset;
+  }
+  
+  .tree-menu {
+    background-color: rgba(143, 143, 143, 0.2);
+    position: absolute;
+    min-width: 120px;
+  }
+
+  .tree-menu-parent:hover {
+    background-color: rgba(143, 143, 143, 0.2);
+  }
 }

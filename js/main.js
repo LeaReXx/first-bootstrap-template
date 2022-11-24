@@ -4,8 +4,9 @@ const $ = document;
 const humbugger = $.querySelector(".humbugger");
 const mobileNav = $.querySelector(".main-top-menu");
 const mobileMenuColseBtn = $.querySelector(".close-mobile-menu");
-const mainMenuItems = $.querySelectorAll(".main-menu-items");
+const mainMenuItems = $.querySelectorAll(".have-tree-menu");
 const treeMenus = $.querySelectorAll(".tree-menu");
+
 humbugger.onclick = () => {
   mobileNav.classList.add("active");
 };
@@ -25,14 +26,20 @@ mobileMenuColseBtn.onclick = () => {
 // mobile tree menu handler
 for (let menuItems of mainMenuItems) {
   menuItems.addEventListener("click", function () {
-    if (this.nextElementSibling.style.height != "0px") {
-      this.nextElementSibling.style.height = "0px";
-    } else {
+    if (getComputedStyle(this.nextElementSibling).height === "0px") {
       for (let treeItems of treeMenus) {
         treeItems.style.height = "0px";
       }
 
       this.nextElementSibling.style.height = `${this.nextElementSibling.scrollHeight}px`;
+    } else {
+      this.nextElementSibling.style.height = "0px";
     }
+  });
+}
+
+for (let treeItems of treeMenus) {
+  treeItems.addEventListener("mouseleave", () => {
+    treeItems.style.height = "0px";
   });
 }
