@@ -19,6 +19,11 @@ header {
   width: 25px;
   height: 2px;
 }
+
+.logo img {
+  vertical-align: unset;
+}
+
 /* navigation menu  */
 .main-top-menu {
   position: fixed;
@@ -51,11 +56,11 @@ header {
   transition: all 0.1s;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .main-top-menu {
     all: unset;
   }
-  
+
   .tree-menu {
     background-color: rgba(143, 143, 143, 0.2);
     position: absolute;
