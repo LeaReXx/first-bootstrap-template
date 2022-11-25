@@ -12,7 +12,6 @@ header {
 .under-header-tag {
   width: 100%;
   margin: auto;
-  max-width: 576px;
 }
 
 /* humbugger icon for mobile  */
@@ -71,7 +70,7 @@ header {
 .header-left-content {
   line-height: 1.7;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .main-top-menu {
     all: unset;
   }
@@ -86,8 +85,5 @@ header {
     border-radius: 4px;
 
   }
-}
-.under-header-tag {
-  max-width: 800px;
 }
 
