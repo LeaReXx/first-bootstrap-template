@@ -119,7 +119,7 @@ a {
 }
 
 .help-section {
-  max-height: 1140px;
+  max-width: 1140px;
 }
 
 .help-section main i {
@@ -127,8 +127,8 @@ a {
 }
 
 .help-section main a {
-  width: 45%;
-  height: 300px;
+  width: 100%;
+  max-width: 250px;
   opacity: 0.8;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -139,6 +139,37 @@ a {
   -webkit-filter: unset;
   filter: unset;
   opacity: 1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.copy-right {
+  outline: 2px solid #7289da;
+  color: #7289da;
+  transition: all 0.1s;
+}
+
+.copy-right i {
+  color: #7289da;
+}
+
+.copy-right:hover {
+  background-color: #7289da;
+  color: #fff;
+  outline: unset;
+}
+
+.copy-right:hover i {
+  color: #fff;
+}
+
+.footer-content {
+  max-width: 1140px;
+}
+
+@media screen and (min-width: 576px) {
+  .help-section main a {
+    width: 45%;
+  }
 }
 
 @media screen and (min-width: 768px) {
