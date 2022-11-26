@@ -115,6 +115,7 @@ a {
 }
 
 .popular-section {
+  max-width: 1140px;
   background-color: #fafbfb;
 }
 
