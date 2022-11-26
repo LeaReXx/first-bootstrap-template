@@ -1,5 +1,5 @@
 * {
-  color: rgb(50 61 71);
+  color: rgb(50 61 71) !important;
 }
 
 header {
@@ -102,11 +102,16 @@ header {
 }
 
 .document-section main {
-  margin-top: 5rem;
+  margin: 5rem auto;
   max-width: 1140px;
 }
+
 .doc-section-items {
   max-width: 400px;
+}
+
+.popular-section {
+  background-color: #fafbfb;
 }
 @media screen and (min-width: 768px) {
   .doc-section-items {
