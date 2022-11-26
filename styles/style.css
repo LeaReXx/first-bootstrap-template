@@ -115,10 +115,13 @@ a {
 }
 
 .popular-section {
-  max-width: 1140px;
   background-color: #fafbfb;
 }
 
+.popular-section-content {
+  max-width: 1140px;
+
+}
 .help-section {
   max-width: 1140px;
 }
