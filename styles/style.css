@@ -1,5 +1,5 @@
 * {
-  color: rgb(50 61 71) !important;
+  color: rgb(50 61 71);
 }
 
 header {
@@ -12,6 +12,10 @@ header {
   height: 70vh;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .under-header-tag {
   width: 100%;
   max-width: 1140px;
@@ -78,7 +82,7 @@ header {
   max-width: 450px;
 }
 
-.fa-caret-right {
+.have-tree-menu.fa-caret-right {
   font-size: 14px;
 }
 
@@ -135,9 +139,10 @@ header {
     border-radius: 4px;
   }
 
-  .fa-caret-right {
+  .have-tree-menu > .fa-caret-right {
     rotate: 90deg;
   }
+
   .doc-section-items {
     max-width: 350px;
   }
